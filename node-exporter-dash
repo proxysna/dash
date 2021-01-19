@@ -1,56 +1,7 @@
 {
-  "__inputs": [
-    {
-      "name": "Prometheus-dev",
-      "label": " VictoriaMetrics",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    }
-  ],
-  "__requires": [
-    {
-      "type": "panel",
-      "id": "bargauge",
-      "name": "Bar gauge",
-      "version": ""
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "7.2.0"
-    },
-    {
-      "type": "panel",
-      "id": "graph",
-      "name": "Graph",
-      "version": ""
-    },
-    {
-      "type": "datasource",
-      "id": "prometheus",
-      "name": "Prometheus",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "stat",
-      "name": "Stat",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "table-old",
-      "name": "Table (old)",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
-        "$$hashKey": "object:2875",
         "builtIn": 1,
         "datasource": "-- Grafana --",
         "enable": true,
@@ -65,11 +16,10 @@
   "editable": true,
   "gnetId": 11074,
   "graphTooltip": 0,
-  "id": null,
-  "iteration": 1602304673501,
+  "id": 3,
+  "iteration": 1611050107904,
   "links": [
     {
-      "$$hashKey": "object:2300",
       "icon": "bolt",
       "tags": [],
       "targetBlank": true,
@@ -79,7 +29,6 @@
       "url": "https://grafana.com/grafana/dashboards/11074"
     },
     {
-      "$$hashKey": "object:2301",
       "icon": "question",
       "tags": [],
       "targetBlank": true,
@@ -89,7 +38,6 @@
       "url": "https://github.com/starsliao"
     },
     {
-      "$$hashKey": "object:2302",
       "asDropdown": true,
       "icon": "external link",
       "tags": [],
@@ -139,7 +87,6 @@
       },
       "styles": [
         {
-          "$$hashKey": "object:1600",
           "alias": "Hostname",
           "align": "auto",
           "colorMode": null,
@@ -160,7 +107,6 @@
           "unit": "bytes"
         },
         {
-          "$$hashKey": "object:1601",
           "alias": "IP（Link to details）",
           "align": "auto",
           "colorMode": null,
@@ -182,7 +128,6 @@
           "unit": "short"
         },
         {
-          "$$hashKey": "object:1602",
           "alias": "Memory",
           "align": "auto",
           "colorMode": null,
@@ -201,7 +146,6 @@
           "unit": "bytes"
         },
         {
-          "$$hashKey": "object:1603",
           "alias": "CPU Cores",
           "align": "auto",
           "colorMode": null,
@@ -219,7 +163,6 @@
           "unit": "short"
         },
         {
-          "$$hashKey": "object:1604",
           "alias": " Uptime",
           "align": "auto",
           "colorMode": null,
@@ -237,7 +180,6 @@
           "unit": "s"
         },
         {
-          "$$hashKey": "object:1605",
           "alias": "Partition used%*",
           "align": "auto",
           "colorMode": "cell",
@@ -258,7 +200,6 @@
           "unit": "percent"
         },
         {
-          "$$hashKey": "object:1606",
           "alias": "CPU used%",
           "align": "auto",
           "colorMode": "cell",
@@ -279,7 +220,6 @@
           "unit": "percent"
         },
         {
-          "$$hashKey": "object:1607",
           "alias": "Memory used%",
           "align": "auto",
           "colorMode": "cell",
@@ -300,7 +240,6 @@
           "unit": "percent"
         },
         {
-          "$$hashKey": "object:1608",
           "alias": "Disk read*",
           "align": "auto",
           "colorMode": "cell",
@@ -321,7 +260,6 @@
           "unit": "Bps"
         },
         {
-          "$$hashKey": "object:1609",
           "alias": "Disk write*",
           "align": "auto",
           "colorMode": "cell",
@@ -342,7 +280,6 @@
           "unit": "Bps"
         },
         {
-          "$$hashKey": "object:1610",
           "alias": "Download*",
           "align": "auto",
           "colorMode": "cell",
@@ -363,7 +300,6 @@
           "unit": "bps"
         },
         {
-          "$$hashKey": "object:1611",
           "alias": "Upload*",
           "align": "auto",
           "colorMode": "cell",
@@ -384,7 +320,6 @@
           "unit": "bps"
         },
         {
-          "$$hashKey": "object:1612",
           "alias": "5m load",
           "align": "auto",
           "colorMode": null,
@@ -402,7 +337,6 @@
           "unit": "short"
         },
         {
-          "$$hashKey": "object:1613",
           "alias": "CurrEstab",
           "align": "auto",
           "colorMode": "cell",
@@ -423,7 +357,6 @@
           "unit": "short"
         },
         {
-          "$$hashKey": "object:1614",
           "alias": "TCP_tw",
           "align": "center",
           "colorMode": "cell",
@@ -444,7 +377,6 @@
           "unit": "short"
         },
         {
-          "$$hashKey": "object:1615",
           "alias": "",
           "align": "right",
           "colorMode": null,
@@ -611,7 +543,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Promehteus-dev",
+      "datasource": "Prometheus-dev",
       "decimals": null,
       "description": "",
       "fieldConfig": {
@@ -656,14 +588,13 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "repeat": null,
       "seriesOverrides": [
         {
-          "$$hashKey": "object:2312",
           "alias": "Overall average used%",
           "lines": false,
           "pointradius": 1,
@@ -671,7 +602,6 @@
           "yaxis": 2
         },
         {
-          "$$hashKey": "object:2313",
           "alias": "CPU Cores",
           "color": "#C4162A"
         }
@@ -732,7 +662,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:8791",
           "decimals": null,
           "format": "short",
           "label": "Total 5m load",
@@ -742,7 +671,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:8792",
           "decimals": 0,
           "format": "percent",
           "label": "Overall average used%",
@@ -812,19 +740,17 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:2494",
           "alias": "Total",
           "color": "#C4162A",
           "fill": 0
         },
         {
-          "$$hashKey": "object:2495",
           "alias": "Overall Average Used%",
           "lines": false,
           "pointradius": 1,
@@ -887,7 +813,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:8938",
           "decimals": null,
           "format": "bytes",
           "label": "Total",
@@ -897,7 +822,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:8939",
           "decimals": null,
           "format": "percent",
           "label": "Overall Average Used%",
@@ -961,13 +885,12 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:2617",
           "alias": "Overall Average Used%",
           "lines": false,
           "pointradius": 1,
@@ -975,7 +898,6 @@
           "yaxis": 2
         },
         {
-          "$$hashKey": "object:2618",
           "alias": "Total",
           "color": "#C4162A"
         }
@@ -1032,7 +954,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:8990",
           "decimals": 1,
           "format": "bytes",
           "label": "Total",
@@ -1042,7 +963,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:8991",
           "decimals": null,
           "format": "percent",
           "label": "Overall Average Used%",
@@ -1135,7 +1055,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "targets": [
         {
           "expr": "avg(time() - node_boot_time_seconds{instance=~\"$node\"})",
@@ -1214,7 +1134,7 @@
         },
         "showUnfilled": true
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "targets": [
         {
           "expr": "100 - (avg(rate(node_cpu_seconds_total{instance=~\"$node\",mode=\"idle\"}[$interval])) * 100)",
@@ -1294,7 +1214,6 @@
       },
       "styles": [
         {
-          "$$hashKey": "object:307",
           "alias": "Mounted on",
           "align": "auto",
           "colorMode": null,
@@ -1314,7 +1233,6 @@
           "unit": "bytes"
         },
         {
-          "$$hashKey": "object:308",
           "alias": "Avail",
           "align": "auto",
           "colorMode": "value",
@@ -1335,7 +1253,6 @@
           "unit": "bytes"
         },
         {
-          "$$hashKey": "object:309",
           "alias": "Used",
           "align": "auto",
           "colorMode": "cell",
@@ -1356,7 +1273,6 @@
           "unit": "percent"
         },
         {
-          "$$hashKey": "object:310",
           "alias": "Size",
           "align": "auto",
           "colorMode": null,
@@ -1375,7 +1291,6 @@
           "unit": "bytes"
         },
         {
-          "$$hashKey": "object:311",
           "alias": "Filesystem",
           "align": "auto",
           "colorMode": null,
@@ -1394,7 +1309,6 @@
           "unit": "short"
         },
         {
-          "$$hashKey": "object:312",
           "alias": "Device",
           "align": "auto",
           "colorMode": null,
@@ -1415,7 +1329,6 @@
           "unit": "short"
         },
         {
-          "$$hashKey": "object:313",
           "alias": "",
           "align": "auto",
           "colorMode": null,
@@ -1532,7 +1445,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "targets": [
         {
           "expr": "avg(rate(node_cpu_seconds_total{instance=~\"$node\",mode=\"iowait\"}[$interval])) * 100",
@@ -1606,14 +1519,13 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 1,
       "points": false,
       "renderer": "flot",
       "repeat": null,
       "seriesOverrides": [
         {
-          "$$hashKey": "object:2970",
           "alias": "/.*_transmit$/",
           "transform": "negative-Y"
         }
@@ -1663,7 +1575,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:2977",
           "format": "bytes",
           "label": "transmit（-）/receive（+）",
           "logBase": 1,
@@ -1672,7 +1583,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:2978",
           "format": "short",
           "logBase": 1,
           "max": null,
@@ -1747,7 +1657,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "targets": [
         {
           "expr": "count(node_cpu_seconds_total{instance=~\"$node\", mode='system'})",
@@ -1772,7 +1682,6 @@
           "custom": {},
           "mappings": [
             {
-              "$$hashKey": "object:193",
               "id": 0,
               "op": "=",
               "text": "N/A",
@@ -1826,7 +1735,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "targets": [
         {
           "expr": "avg(node_filesystem_files_free{instance=~\"$node\",mountpoint=\"$maxmount\",fstype=~\"ext.?|xfs\"})",
@@ -1905,7 +1814,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "targets": [
         {
           "expr": "sum(node_memory_MemTotal_bytes{instance=~\"$node\"})",
@@ -1930,7 +1839,6 @@
           "custom": {},
           "mappings": [
             {
-              "$$hashKey": "object:271",
               "id": 0,
               "op": "=",
               "text": "N/A",
@@ -1984,7 +1892,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "targets": [
         {
           "expr": "avg(node_filefd_maximum{instance=~\"$node\"})",
@@ -2063,14 +1971,13 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "repeat": null,
       "seriesOverrides": [
         {
-          "$$hashKey": "object:3051",
           "alias": "/.*Total/",
           "color": "#C4162A",
           "fill": 0
@@ -2143,7 +2050,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:11294",
           "decimals": 0,
           "format": "percent",
           "label": "",
@@ -2153,7 +2059,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:11295",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -2225,19 +2130,17 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:3234",
           "alias": "Total",
           "color": "#C4162A",
           "fill": 0
         },
         {
-          "$$hashKey": "object:3235",
           "alias": "Used%",
           "color": "rgb(0, 209, 255)",
           "lines": false,
@@ -2346,7 +2249,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:3130",
           "format": "bytes",
           "label": null,
           "logBase": 1,
@@ -2355,7 +2257,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:3131",
           "format": "percent",
           "label": "Utilization%",
           "logBase": 1,
@@ -2420,13 +2321,12 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:3308",
           "alias": "/.*_transmit$/",
           "transform": "negative-Y"
         }
@@ -2474,7 +2374,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:3315",
           "format": "bps",
           "label": "transmit（-）/receive（+）",
           "logBase": 1,
@@ -2483,7 +2382,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:3316",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -2553,14 +2451,13 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "repeat": null,
       "seriesOverrides": [
         {
-          "$$hashKey": "object:3389",
           "alias": "/.*CPU cores/",
           "color": "#C4162A"
         }
@@ -2633,7 +2530,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:3396",
           "format": "short",
           "logBase": 1,
           "max": null,
@@ -2641,7 +2537,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:3397",
           "format": "short",
           "logBase": 1,
           "max": null,
@@ -2704,13 +2599,12 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:3474",
           "alias": "/.*_Read bytes$/",
           "transform": "negative-Y"
         }
@@ -2759,7 +2653,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:3481",
           "decimals": null,
           "format": "Bps",
           "label": "Bytes read (-) / write (+)",
@@ -2769,7 +2662,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:3482",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -2832,13 +2724,12 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:3554",
           "alias": "/Inodes.*/",
           "yaxis": 2
         }
@@ -2884,7 +2775,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:3561",
           "decimals": null,
           "format": "percent",
           "label": "",
@@ -2894,7 +2784,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:3562",
           "decimals": 2,
           "format": "percentunit",
           "label": null,
@@ -2959,13 +2848,12 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:3711",
           "alias": "/.*_Reads completed$/",
           "transform": "negative-Y"
         }
@@ -3024,7 +2912,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:3718",
           "decimals": null,
           "format": "iops",
           "label": "IO read (-) / write (+)",
@@ -3034,7 +2921,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:3719",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -3111,7 +2997,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -3149,7 +3035,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:3796",
           "decimals": null,
           "format": "percentunit",
           "label": "",
@@ -3159,7 +3044,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:3797",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -3223,13 +3107,12 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:4023",
           "alias": "/,*_Read time$/",
           "transform": "negative-Y"
         }
@@ -3298,7 +3181,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:4030",
           "format": "s",
           "label": "Time read (-) / write (+)",
           "logBase": 1,
@@ -3307,7 +3189,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:4031",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -3376,13 +3257,12 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:4103",
           "alias": "/.*Sockets_used/",
           "color": "#E02F44",
           "lines": false,
@@ -3496,7 +3376,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:4118",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -3505,7 +3384,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:4119",
           "format": "short",
           "label": "Total_Sockets_used",
           "logBase": 1,
@@ -3570,13 +3448,12 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.7",
       "pointradius": 1,
       "points": false,
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "$$hashKey": "object:4197",
           "alias": "switches",
           "color": "#FADE2A",
           "lines": false,
@@ -3585,7 +3462,6 @@
           "yaxis": 2
         },
         {
-          "$$hashKey": "object:4198",
           "alias": "used filefd",
           "color": "#F2495C"
         }
@@ -3641,7 +3517,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:4219",
           "format": "short",
           "label": "used filefd",
           "logBase": 1,
@@ -3650,7 +3525,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:4220",
           "format": "short",
           "label": "context_switches",
           "logBase": 1,
@@ -3677,9 +3551,15 @@
     "list": [
       {
         "allValue": "",
-        "current": {},
+        "current": {
+          "isNone": true,
+          "selected": false,
+          "text": "None",
+          "value": ""
+        },
         "datasource": "Prometheus-dev",
         "definition": "label_values(origin_prometheus)",
+        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Origin_prom",
@@ -3699,9 +3579,14 @@
       },
       {
         "allValue": null,
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "node-exporter",
+          "value": "node-exporter"
+        },
         "datasource": "Prometheus-dev",
         "definition": "label_values(node_uname_info{origin_prometheus=~\"$origin_prometheus\"}, job)",
+        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "JOB",
@@ -3721,9 +3606,14 @@
       },
       {
         "allValue": null,
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "All",
+          "value": "$__all"
+        },
         "datasource": "Prometheus-dev",
         "definition": "label_values(node_uname_info{origin_prometheus=~\"$origin_prometheus\",job=~\"$job\"}, nodename)",
+        "error": null,
         "hide": 0,
         "includeAll": true,
         "label": "Host",
@@ -3744,9 +3634,14 @@
       {
         "allFormat": "glob",
         "allValue": null,
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "172.16.4.32:9100",
+          "value": "172.16.4.32:9100"
+        },
         "datasource": "Prometheus-dev",
         "definition": "label_values(node_uname_info{origin_prometheus=~\"$origin_prometheus\",job=~\"$job\",nodename=~\"$hostname\"},instance)",
+        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Instance",
@@ -3768,9 +3663,14 @@
       {
         "allFormat": "glob",
         "allValue": null,
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "All",
+          "value": "$__all"
+        },
         "datasource": "Prometheus-dev",
         "definition": "label_values(node_network_info{origin_prometheus=~\"$origin_prometheus\",device!~'tap.*|veth.*|br.*|docker.*|virbr.*|lo.*|cni.*'},device)",
+        "error": null,
         "hide": 0,
         "includeAll": true,
         "label": "NIC",
@@ -3798,6 +3698,7 @@
           "text": "2m",
           "value": "2m"
         },
+        "error": null,
         "hide": 0,
         "label": "Interval",
         "name": "interval",
@@ -3846,9 +3747,14 @@
       },
       {
         "allValue": null,
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "/",
+          "value": "/"
+        },
         "datasource": "Prometheus-dev",
         "definition": "query_result(topk(1,sort_desc (max(node_filesystem_size_bytes{origin_prometheus=~\"$origin_prometheus\",instance=~'$node',fstype=~\"ext.?|xfs\",mountpoint!~\".*pods.*\"}) by (mountpoint))))",
+        "error": null,
         "hide": 2,
         "includeAll": false,
         "label": "maxmount",
@@ -3868,9 +3774,14 @@
       },
       {
         "allValue": null,
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "nomad2.dev.contextvision.se",
+          "value": "nomad2.dev.contextvision.se"
+        },
         "datasource": "Prometheus-dev",
         "definition": "label_values(node_uname_info{origin_prometheus=~\"$origin_prometheus\",job=~\"$job\",instance=~\"$node\"}, nodename)",
+        "error": null,
         "hide": 2,
         "includeAll": false,
         "label": "show_hostname",
@@ -3890,9 +3801,14 @@
       },
       {
         "allValue": null,
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "8",
+          "value": "8"
+        },
         "datasource": "Prometheus-dev",
         "definition": "query_result(count(node_uname_info{origin_prometheus=~\"$origin_prometheus\",job=~\"$job\"}))",
+        "error": null,
         "hide": 2,
         "includeAll": false,
         "label": "total_servers",
@@ -3940,7 +3856,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "1    Node Exporter for Prometheus Dashboard EN v20201010",
-  "uid": "xfpJB9FGz",
-  "version": 2
+  "title": "1    Node Exporter for Prometheus Dashboard EN v20201010 manual",
+  "uid": "xfpJB9FGz1",
+  "version": 1
 }
